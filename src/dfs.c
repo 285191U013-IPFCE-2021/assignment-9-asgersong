@@ -26,7 +26,7 @@ void DFT (node * root)
     temp = top(topp); // temporary node-pointer is set to point to current top
     print_node(temp);
 
-    // pop top of stack and assess left- and right-child and then push them back to stack if they aren't NULL and has not yet been visited.
+    // pop top of stack and assess current top's (temp's) left- and right-child and then push them to stack if they aren't NULL and has not yet been visited.
     topp = pop(topp);
     if(temp -> rchild != NULL && temp -> rchild -> visited == false)
     {
